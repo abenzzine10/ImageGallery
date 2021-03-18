@@ -1,0 +1,60 @@
+#gallery{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  padding: 10px;
+  z-index: 0;
+}
+
+.img {
+  border: 1px solid;
+  padding: 20px;
+  text-align: center;
+  background-color: #333333;
+  color: inherit;
+  overflow: hidden;
+}
+
+.img img{
+  position: relative;
+  width: 400px;
+  height: 280px;
+}
+
+.img img:hover{
+  width: 440px;
+  height: 308px;
+}
+
+.image{
+  z-index: 1;
+  display: none;
+  position: fixed;
+  border: 1px solid;
+  padding: 20px;
+  text-align: center;
+  background-color: #333333;
+  color: inherit;
+  left: 50%;
+  margin-left: -400px;
+}
+
+.image img{
+  position: relative;
+  width: 800px;
+  height: 560px;
+}
+
+.buttons{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  padding: 10px;
+}
+
+.button{
+  padding: 10px;
+  text-align: center;
+}
+
+#next0, #previous1{
+  visibility: hidden;
+}
